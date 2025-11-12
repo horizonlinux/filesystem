@@ -8,13 +8,12 @@
 
 pkgname=filesystem-horizon
 pkgver=2025.11
-pkgrel=1
+pkgrel=2
 pkgdesc='Base Horizon files'
 arch=('any')
 license=('0BSD')
 url='https://horizon.is-a.dev'
 replaces=('filesystem')
-provides=('filesystem')
 depends=('iana-etc')
 backup=(
   'etc/crypttab'
@@ -162,6 +161,7 @@ package() {
     ["etc/issue"]="issue:644:0:0"
     ["etc/ld.so.conf"]="ld.so.conf:644:0:0"
     ["etc/nsswitch.conf"]="nsswitch.conf:644:0:0"
+    ["etc/os-release"]="os-release:644:0:0"
     ["etc/passwd"]="passwd:644:0:0"
     ["etc/profile"]="profile:644:0:0"
     ["etc/profile.d/locale.sh"]="locale.sh:644:0:0"
@@ -199,6 +199,8 @@ package() {
     ["usr/share/pixmaps/archlinux-logo.svg"]="archlinux-logo.svg:644:0:0"
     ["usr/share/pixmaps/archlinux-logo-text.svg"]="archlinux-logo-text.svg:644:0:0"
     ["usr/share/pixmaps/archlinux-logo-text-dark.svg"]="archlinux-logo-text-dark.svg:644:0:0"
+    ["usr/share/pixmaps/horizon-logo.svg"]="horizon-logo.svg:644:0:0"
+    ["usr/share/pixmaps/horizon-logo-symbol.svg"]="horizon-logo-symbol.svg:644:0:0"
   )
 
   cd "$pkgdir"
