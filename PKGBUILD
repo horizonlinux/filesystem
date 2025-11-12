@@ -7,7 +7,7 @@
 # Contributor: Tom Gundersen <teg@jklm.no>
 
 pkgname=filesystem-horizon
-pkgver=2025.11-1
+pkgver=2025.11
 pkgrel=1
 pkgdesc='Base Horizon files'
 arch=('any')
